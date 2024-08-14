@@ -1,0 +1,12 @@
+<div class="page">
+    <div class="container">
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-point" *ngFor="let point of points" (click)="openMedia(point, $event)">
+                <span class="year-text">{{ point.year }}</span>
+                <span class="point"></span>
+            </div>
+        </div>
+        <media *ngIf="selectedMedia" [mediaContent]="selectedMedia" [top]="mediaTop"></media>
+    </div>
+</div>
