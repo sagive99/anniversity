@@ -2,6 +2,7 @@ import {
   Component,
   Input,
   OnChanges,
+  OnInit,
   SimpleChanges,
 } from '@angular/core';
 import { MediaContent } from './media.types';
@@ -30,12 +31,17 @@ import { trigger, transition, style, animate } from '@angular/animations';
     ]),
   ],
 })
-export class MediaComponent implements OnChanges {
+export class MediaComponent implements OnChanges, OnInit {
   @Input() mediaContent: MediaContent;
   @Input() top: string = '0';
   showMedia: boolean = false;
+  src: string;
 
   constructor() {}
+
+  ngOnInit(): void {
+    this.setSrc();
+  }
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes.mediaContent) {
@@ -44,5 +50,8 @@ export class MediaComponent implements OnChanges {
         this.showMedia = true;
       }, 300);
     }
+    this.setSrc();
   }
+
+  setSrc = () => (this.src = `assets/${this.mediaContent.imageUrl}`);
 }

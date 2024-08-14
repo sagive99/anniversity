@@ -2,10 +2,8 @@
     <div class="container">
         <div class="timeline-container">
             <div class="timeline-line"></div>
-            <div class="timeline-point"
-                 *ngFor="let point of points"
-                 (click)="openMedia(point, $event)"
-                 [class.selected]="selectedMedia && selectedMedia.title === point.title">
+            <div class="timeline-point" *ngFor="let point of points" (click)="openMedia(point, $event)"
+                [class.selected]="selectedMedia && selectedMedia.title === point.title">
                 <span class="year-text">{{ point.year }}</span>
                 <span class="point"></span>
             </div>
@@ -16,5 +14,8 @@
     <interactive class="family" [item]="family"></interactive>
 </div>
 <div *ngIf="showStartScreen" class="splash" (click)="hideStartScreen()" [@fadeOut]="splashState">
-    <h1 class="splash-header">!יום נישואין לסבא וסבתא</h1>
+    <div class="splash-content">
+        <div class="splash-header">!יום נישואין לסבא וסבתא</div>
+        <div class="splash-second">?תצליחו לנחש איזה אירוע בכל שנה</div>
+    </div>
 </div>

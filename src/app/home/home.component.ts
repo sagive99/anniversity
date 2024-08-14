@@ -26,12 +26,12 @@ export class HomeComponent implements OnInit {
 
   family: Item = {
     name: 'family',
-    text: 'משפוחה',
+    text: '...המשפחה',
   };
 
   ouzo: Item = {
     name: 'ouzo',
-    text: '?חגיגות אה',
+    text: '!רק בשמחות',
   };
 
   selectedMedia: MediaContent = null;

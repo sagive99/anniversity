@@ -1,9 +1,9 @@
 <mat-card *ngIf="showMedia" class="media-card" @fadeInOut>
     <mat-card-header>
-        <mat-card-title>{{ mediaContent.title }}</mat-card-title>
+        <mat-card-title class="media-title">{{ mediaContent.title }}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <img *ngIf="mediaContent.imageUrl" [src]="mediaContent.imageUrl" class="media-image" />
-        <p *ngIf="mediaContent.description">{{ mediaContent.description }}</p>
+        <img [src]="src" class="media-image" />
+        <div class="media-description" *ngIf="mediaContent.description" [innerHTML]="mediaContent.description"></div>
     </mat-card-content>
 </mat-card>

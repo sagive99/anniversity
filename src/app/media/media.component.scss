@@ -28,11 +28,18 @@
       border-radius: 4px;
       margin-bottom: 16px;
     }
+  }
+  .media-description {
+    font-family: heebo;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+  }
 
-    p {
-      font-size: 1rem;
-      color: #333;
-      line-height: 1.5;
-    }
+  .media-title {
+    font-family: heebo;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
   }
 }
