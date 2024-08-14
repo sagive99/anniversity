@@ -9,9 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { MediaComponent } from './media/media.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
+import { InteractiveComponent } from './interactive/interactive.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, MediaComponent],
+  declarations: [AppComponent, HomeComponent, MediaComponent, InteractiveComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

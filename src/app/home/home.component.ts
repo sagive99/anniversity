@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MediaContent } from '../media/media.types';
-import { MatDialog } from '@angular/material/dialog';
+import { Item } from '../interactive/interactive.type';
 
 @Component({
   selector: 'app-home',
@@ -31,6 +31,14 @@ export class HomeComponent implements OnInit {
 
   selectedMedia: MediaContent;
   mediaTop: string;
+  family: Item = {
+    name: 'family',
+    text: 'משפוחה',
+  };
+  ouzo: Item = {
+    name: 'ouzo',
+    text: '?חגיגות אה',
+  };
 
   constructor() {}
 
