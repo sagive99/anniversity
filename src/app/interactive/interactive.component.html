@@ -1,6 +1,7 @@
-<div class="item-wrapper">
+<div class="item-wrapper" (click)="generatePhoto()">
     <div class="item-text">
         {{ item.text }}
     </div>
-    <img [src]="src"class="item-image" />
+    <img [src]="src" class="item-image" />
 </div>
+<img [src]="floatingSrc" class="floating-image" [@floatAnimation]="floatState" />

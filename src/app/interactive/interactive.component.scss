@@ -3,11 +3,22 @@
   display: inline-block;
   overflow: hidden;
   margin: -15px;
+  cursor: pointer;
 }
 
 .item-image {
   width: 150px;
   transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.floating-image {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: 0;
+  border-radius: 10%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 5s ease-in-out, opacity 5s ease-in-out;
 }
 
 .item-text {
@@ -25,7 +36,7 @@
 }
 
 .item-wrapper:hover .item-image {
-  transform: scale(1.2)!important;
+  transform: scale(1.2) !important;
 }
 
 .item-wrapper:hover .item-text {
