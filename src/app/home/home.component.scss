@@ -2,10 +2,10 @@ $hover-color: #e274ab;
 $page-background: linear-gradient(to top, #f4f1bb, #c4d8ec);
 
 .page {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   background: $page-background;
 }
 
@@ -73,7 +73,6 @@ $page-background: linear-gradient(to top, #f4f1bb, #c4d8ec);
   position: fixed;
   bottom: 0;
   left: 15px;
-  margin-left: -30px;
   z-index: 1000;
   transform: rotate(10deg);
 }
@@ -120,4 +119,14 @@ $page-background: linear-gradient(to top, #f4f1bb, #c4d8ec);
 .splash-second {
   margin-top: 20px;
   font-size: 25px;
+}
+
+.video-button {
+  position: absolute;
+  font-family: heebo;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  top: 0;
+  background-color: #ffc2e8;
 }

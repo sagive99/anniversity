@@ -28,7 +28,8 @@ export class InteractiveComponent implements OnInit {
   src: string;
   floatState: string = 'start';
   floatingSrc: string;
-  private images = ['image1'];
+  private images = ['image1', 'image2', 'image3', 'image4', 'image5'];
+  imageIndex = 0;
 
   constructor() {}
 
@@ -40,15 +41,20 @@ export class InteractiveComponent implements OnInit {
 
   generatePhoto = () => {
     this.floatingSrc = this.randomPhoto();
-    this.floatState = 'end';
-    setTimeout(() => {
-      this.floatState = 'start';
-      this.floatingSrc = "";
-    }, 7500);
+    if (this.floatState === 'start') {
+      this.floatState = 'end';
+      setTimeout(() => {
+        this.floatState = 'start';
+        this.floatingSrc = '';
+      }, 7500);
+    }
   };
 
-  randomPhoto = (): string =>
-    `assets/${this.item.name}/${
-      this.images[Math.floor(Math.random() * this.images.length)]
-    }.jpg`;
+  randomPhoto = (): string => {
+    if (this.imageIndex + 1 > this.images.length) {
+      this.imageIndex = 0;
+    }
+
+    return `assets/${this.item.name}/${this.images[this.imageIndex++]}.jpg`;
+  };
 }

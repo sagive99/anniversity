@@ -8,6 +8,8 @@ import {
   animate,
   transition,
 } from '@angular/animations';
+import { MatDialog } from '@angular/material/dialog';
+import { VideoDialogComponent } from '../video-dialog/video-dialog.component';
 
 @Component({
   selector: 'app-home',
@@ -39,7 +41,7 @@ export class HomeComponent implements OnInit {
   showStartScreen = true;
   splashState = 'visible';
 
-  constructor() {}
+  constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {}
 
@@ -56,4 +58,11 @@ export class HomeComponent implements OnInit {
       this.showStartScreen = false;
     }, 1000);
   };
+
+  startVideo(): void {
+    this.dialog.open(VideoDialogComponent, {
+      data: '../assets/niraVideo.mp4',
+      width: '90vw',
+    });
+  }
 }

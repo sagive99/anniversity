@@ -10,16 +10,25 @@ import { MediaComponent } from './media/media.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { InteractiveComponent } from './interactive/interactive.component';
+import { MatButtonModule } from '@angular/material/button';
+import { VideoDialogComponent } from './video-dialog/video-dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, MediaComponent, InteractiveComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    MediaComponent,
+    InteractiveComponent,
+    VideoDialogComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MatCardModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
