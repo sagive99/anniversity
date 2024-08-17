@@ -12,6 +12,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { InteractiveComponent } from './interactive/interactive.component';
 import { MatButtonModule } from '@angular/material/button';
 import { VideoDialogComponent } from './video-dialog/video-dialog.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { VideoDialogComponent } from './video-dialog/video-dialog.component';
     MatDialogModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

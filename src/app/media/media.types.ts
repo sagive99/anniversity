@@ -16,29 +16,31 @@ export const medias = [
   },
   {
     year: 1970,
-    title: '!סיגלית בת שנה',
+    title: 'סיגלית בת שנה',
     imageUrl: 'sigalite1.jpg',
     description:
       '!הבת הבכורה כבר בת שנה<br>\
     !איזה מאורע ואיזו חגיגה',
   },
   {
-    year: 2024,
-    title: '!שנות נישואין 90',
-    imageUrl: '',
-    description: 'תחילת הדרך, כמה אושר וחוויות מחכות... !היום המאושר בחייכם',
+    year: 1976,
+    title: 'ברית של ניסן',
+    imageUrl: 'nissanBorn.jpg',
+    description: '!הברית של הבן היחיד',
   },
   {
-    year: 2024,
-    title: '!שנות נישואין 100',
-    imageUrl: '',
-    description: 'תחילת הדרך, כמה אושר וחוויות מחכות... !היום המאושר בחייכם',
+    year: 1996,
+    title: '32 יום נישואין',
+    imageUrl: 'anniversity32.jpg',
+    description: 'כבר עברנו דיי הרבה... סיבה לחגוג',
   },
   {
-    year: 2024,
-    title: '!שנות נישואין 600',
-    imageUrl: '',
-    description: 'תחילת הדרך, כמה אושר וחוויות מחכות... !היום המאושר בחייכם',
+    year: 1998,
+    title: 'ברית של אלדר',
+    imageUrl: 'eldarBorn.jpg',
+    description:
+      'חגגנו לבן, הגיע גם התור של הנכד<br>\
+    !הנכד הראשון חוגג ברית',
   },
   {
     year: 2014,
@@ -54,7 +56,7 @@ export const medias = [
   },
   {
     year: 2024,
-    title: '!שנות נישואין 60',
+    title: '!60 יום נישואין',
     imageUrl: '',
     description:
       '...קטע, עדיין חסרה תמונה<br>\

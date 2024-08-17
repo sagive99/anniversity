@@ -10,7 +10,8 @@ $page-background: linear-gradient(to top, #f4f1bb, #c4d8ec);
 }
 
 .container {
-  width: 80%;
+  width: 75%;
+  max-height: 80%;
 }
 
 .timeline-container {
@@ -125,8 +126,29 @@ $page-background: linear-gradient(to top, #f4f1bb, #c4d8ec);
   position: absolute;
   font-family: heebo;
   font-weight: bold;
-  font-size: 20px;
   margin-top: 10px;
   top: 0;
-  background-color: #ffc2e8;
+
+  mat-icon {
+    font-size: 50px;
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+.young-image {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  margin: 10px;
+  border-radius: 30px;
+  box-shadow: 2px 3px 5px black;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
 }
