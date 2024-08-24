@@ -12,7 +12,7 @@ export const medias = [
     imageUrl: 'wedding.jpg',
     description:
       '!היום המאושר בחייכם <br>\
-    ...תחילת הדרך, כמה אושר וחוויות מחכות',
+    תחילת הדרך, כמה אושר וחוויות מחכות',
   },
   {
     year: 1970,
@@ -29,6 +29,12 @@ export const medias = [
     description: '!הברית של הבן היחיד',
   },
   {
+    year: 1989,
+    title: 'בר מצווה של ניסן',
+    imageUrl: 'nissanBarMItzva.jpg',
+    description: ';) רק נולד כבר חוגג בר מצווה',
+  },
+  {
     year: 1996,
     title: '32 יום נישואין',
     imageUrl: 'anniversity32.jpg',
@@ -43,10 +49,22 @@ export const medias = [
     !הנכד הראשון חוגג ברית',
   },
   {
-    year: 2014,
-    title: '!50 שנות נישואין',
-    imageUrl: '',
-    description: '...עדיין מרגיש כאילו זה היה אתמול',
+    year: 2004,
+    title: '!חגיגות 70 לסבא',
+    imageUrl: 'grandfatherBirthday.jpg',
+    description: '?חוגג 70 או שחוגג 20',
+  },
+  {
+    year: 2005,
+    title: 'הולדת מעיין',
+    imageUrl: 'maayan.jpg',
+    description: '!נולדה הנכדה הראשונה',
+  },
+  {
+    year: 2015,
+    title: '!חתונה של ניסן וגלי',
+    imageUrl: 'nissanWedding.jpg',
+    description: "...נולד, חגג בר מצווה ועכשיו גם התחתן"
   },
   {
     year: 2020,

@@ -17,9 +17,9 @@ import {
       state('start', style({ opacity: 1, transform: 'scale(1.5)' })),
       state(
         'end',
-        style({ opacity: 0.5, transform: 'translateY(-100vh) scale(1.5)' })
+        style({ opacity: 0.75, transform: 'translateY(-100vh) scale(1.5)' })
       ),
-      transition('start => end', animate('7.5s ease-in-out')),
+      transition('start => end', animate('10s ease-in-out')),
     ]),
   ],
 })
@@ -46,7 +46,7 @@ export class InteractiveComponent implements OnInit {
       setTimeout(() => {
         this.floatState = 'start';
         this.floatingSrc = '';
-      }, 7500);
+      }, 10000);
     }
   };
 
